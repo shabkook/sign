@@ -1,0 +1,24 @@
+.wrapper {
+  width: 100%;
+  padding-top: 100px;
+
+  /* height: fit-content; */
+  /* background-color: aquamarine; */
+  .window {
+    margin: 0 auto;
+    width: 60%;
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    column-gap: 100px;
+    background-color: blue;
+
+    h1 {
+      color: lightskyblue;
+      
+    }
+    #pdf {
+    }
+  }
+}
