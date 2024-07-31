@@ -3,29 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>PDF Signing</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <div class="window">
-        <h1>This is a Test Project for Concatenate Two PDF files</h1>
-        <p>Select two Files to upload</p>
-        <!-- <input type="file" name="pdf-file" id="pdf" accept=".pdf" autofocus  onchange="uploadpath()"/>
-        <p id="demo"></p> -->
-
-        <div>
-          <input type="file" id="pdf1" accept="application/pdf" />
-          <input type="file" id="pdf2" accept="application/pdf" />
-          <button id="concatBtn">Concatenate PDFs</button>
-        </div>
-
-        <a id="download" style="display: none">Download PDF</a>
+        <h1>This is a Test Project for Signing a PDF file</h1>
+        <p>Select a file to upload:</p>
+        <input type="file" name="pdf-file" id="pdf" accept=".pdf" autofocus onchange="uploadpath()" title="Please Select your PDF file to sign: "  multiple/>
+        <!-- <input name="pdf-file" onchange="mergeAllPDFs(urls)"/> -->
+        <p id="demo"></p>
       </div>
     </div>
+
     <script src="./js/main.js"></script>
-    <!-- <script src="./js/getfile.js"></script> -->
+    <script src='https://cdn.jsdelivr.net/npm/pdf-lib/dist/pdf-lib.min.js'></script>
+
 
     <!-- <p>Click the button to create a File Upload Button.</p>
 
