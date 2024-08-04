@@ -12,32 +12,35 @@
     flex-flow: column nowrap;
     align-items: center;
     column-gap: 100px;
-    background-color: blue;
+    background-color: rgb(255, 174, 0);
+
     box-shadow: 5px 5px 25px #2b2b2b;
     &:hover {
       box-shadow: 5px 5px 45px rgb(135, 250, 139);
     }
 
     h1 {
-      color: lightskyblue;
+      color: rgb(34, 57, 232);
       font-size: 24px;
     }
     p {
       color: whitesmoke;
       font-size: 20px;
+      margin: 20px;
     }
 
     div {
-      width: 80%;
+      width: 70%;
       display: flex;
-      flex-flow: row nowrap;
+      flex-flow: row wrap;
       flex: 0 1 50%;
       justify-content: space-between;
       justify-items: center;
       align-items: center;
-      /* flex: repeat(2, 50%); */
+      justify-self: center;
+      row-gap: 20px;
       input {
-        color: aqua;
+        color: rgb(255, 0, 170);
         padding: 10px;
       }
       #concatBtn {
@@ -60,7 +63,28 @@
       margin: 0 auto;
       padding: 10px;
     }
-    #pdf {
+    #pdf1 {
+      &:hover {
+        color: red;
+        font-size: 14px;
+        box-shadow: 5px 5px 45px rgb(62, 197, 235);
+      }
+    }
+    #pdf2 {
+      &:hover {
+        color: red;
+        font-size: 14px;
+        box-shadow: 5px 5px 45px rgb(62, 197, 235);
+      }
+    }
+    #concatinateBtn {
+      &:hover {
+        color: red;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 5px 5px 45px rgb(62, 197, 235);
+
+      }
     }
   }
 }

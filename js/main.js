@@ -34,7 +34,7 @@ async function concatenatePDFs(pdf1, pdf2) {
   return await mergedPdf.save();
 }
 
-document.getElementById("concatBtn").addEventListener("click", async () => {
+document.getElementById("concatinateBtn").addEventListener("click", async () => {
   const pdf1 = document.getElementById("pdf1").files[0];
   const pdf2 = document.getElementById("pdf2").files[0];
 
